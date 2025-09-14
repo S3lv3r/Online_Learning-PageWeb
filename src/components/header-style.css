@@ -13,6 +13,7 @@
 .background-header {
     background-color: #FFF2E1;
     border-radius: 10% 10% 40% 40% / 0% 0% 20% 20%;
+    overflow: hidden;
 }
 
 .header-up {
@@ -336,4 +337,22 @@
     50% {
         transform: translateY(-10px);
     }
+}
+
+/* Responsive */
+@media (min-width: 1600px) {
+    .-leftSide-statement p {
+        font-weight: bold;
+        font-size: 40px;
+        color: #2F327D;
+        max-width: 20ch;
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+    .header-down-leftSide{
+        margin-left: 5%;
+    }
+    .header-down-rightSide img {
+    height: 155%;
+}
 }
