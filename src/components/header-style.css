@@ -1,75 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-:root{
+:root {
     --border-px: 0px
 }
 
-.background-header{
+.background-header {
     background-color: #FFF2E1;
+    border-radius: 10% 10% 40% 40% / 0% 0% 20% 20%;
 }
 
-.header-up{
+.header-up {
     border: var(--border-px) solid black;
     display: flex;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     padding-top: 2%;
 }
-.logo-header-up{
+
+.logo-header-up {
     border: var(--border-px) solid black;
     margin-left: 5%;
 }
-.logo-header-up img{
+
+.logo-header-up img {
     width: 75%;
     height: inherit;
 }
-.items-upper-header-up{
+
+.items-upper-header-up {
     margin-left: 20%;
 }
-.items-header-up{
+
+.items-header-up {
     border: var(--border-px) solid black;
     width: 35%;
     align-content: center;
     justify-content: center;
 }
-.items-header-up nav ul{
+
+.items-header-up nav ul {
     border: var(--border-px) solid black;
     display: flex;
     gap: 12%;
     font-size: 20px;
     justify-content: center;
 }
-.items-header-up a{
+
+.items-header-up a {
     text-decoration: none;
     color: #252641;
+    transition: color 0.5s ease;
 }
-.account-header-up{
+
+.items-header-up a:hover {
+    color: #23BDEE;
+}
+
+.account-header-up {
     border: var(--border-px) solid black;
     align-content: center;
     justify-content: center;
     width: 30%;
     margin-left: 2%;
 }
-.account-header-up button{
+
+.account-header-up button {
     font-size: 20px;
     border-radius: 40px;
     width: 130px;
-    height: 40px;
+    height: 45px;
     margin-inline: 2%;
     border: 0px;
 }
-.-button-login{
+
+.-button-login {
     background-color: #ffff;
     color: #6C6C6C;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.21));
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.-button-signup{
+
+.-button-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(184, 184, 184, 0.4);
+}
+
+.-button-signup {
     background-color: #F48C06;
     color: #ffff;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.21));
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.-button-signup:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+}
+
+/* DOWN */
+
+.header-down {
+    display: flex;
+    border: var(--border-px) solid black;
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    padding-bottom: 14%;
+}
+
+.header-down-leftSide {
+    border: var(--border-px) solid black;
+    width: 45%;
+    padding-top: 10%;
+}
+
+.-leftSide-statement {
+    border: var(--border-px) solid black;
+    margin-left: 15%;
+}
+
+.-leftSide-statement p {
+    font-weight: bold;
+    font-size: 40px;
+    color: #2F327D;
+}
+
+.-leftSide-statement strong {
+    font-weight: bold;
+    color: #F48C06;
+}
+
+.-leftSide-resume {
+    border: var(--border-px) solid black;
+    margin-left: 15%;
+    margin-top: 4%;
+}
+
+.-leftSide-resume p {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 35ch;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.-leftSide-buttons {
+    border: var(--border-px) solid black;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+    gap: 4%;
+}
+
+.-leftSide-buttons-joinBTN {
+    border: 0;
+    border-radius: 25px;
+    width: 160px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #F48C06;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.-leftSide-buttons-joinBTN:hover {
+    transform: scale(105%);
+}
+
+.-leftSide-buttons-playBTN {
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #23BDEE;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.-leftSide-buttons-playBTN:hover {
+    transform: translateX(10%);
+}
+
+.-playBTN-icon {
+    font-size: 18px;
+}
+
+.-leftSide-buttons p {
+    justify-content: center;
+    align-content: center;
+}
+
+.header-down-rightSide {
+    border: var(--border-px) solid black;
+    width: 55%;
+    position: relative;
+}
+
+.header-down-rightSide img {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    user-select: none;
+}
+
+/* CARD */
+.-rightSide-background-card {
+    position: absolute;
+    display: flex;
+    background-color: #ffffffa2;
+    border: var(--border-px) solid black;
+    width: 270px;
+    height: 70px;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #595959;
+    animation: floatCard 3s infinite;
+}
+
+.rightSide-background-card-img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide-background-card-img div {
+    border: var(--border-px) solid black;
+    width: 45px;
+    height: 45px;
+    align-content: center;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.-card-img-fontawesome {
+    font-size: 25px;
+    color: #ffff;
+    margin-top: 10%;
+
+}
+
+.rightSide-background-card-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: var(--border-px) solid black;
+    justify-content: center;
+}
+
+.rightSide-background-card-text span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.rightSide-background-card-text p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#assistedDiv {
+    left: 15%;
+    top: 30%;
+    width: 200px;
+}
+
+#assistedDiv .rightSide-background-card-text {
+    margin-left: 5%;
+}
+
+#assistedDiv .rightSide-background-card-img {
+    margin-left: 5%;
+}
+
+#assistedDiv .rightSide-background-card-img div {
+    background-color: #23BDEE;
+}
+
+#congratulationsDiv {
+    left: 55%;
+    top: 70%;
+    width: 275px;
+}
+
+#congratulationsDiv .rightSide-background-card-img div {
+    background-color: #F88C3D;
+}
+
+#userDiv {
+    height: 120px;
+    left: 13%;
+    top: 90%;
+}
+
+#userDiv .rightSide-background-card-img {
+    margin-bottom: 15%;
+}
+
+#userDiv .rightSide-background-card-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#userDiv .rightSide-background-card-text button {
+    margin-top: 5%;
+    background-color: #D8587E;
+    color: #fff;
+    border: 0px;
+    border-radius: 80px;
+    font-size: 16px;
+    width: 65%;
+    height: 35PX;
+}
+
+/* Animations */
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
