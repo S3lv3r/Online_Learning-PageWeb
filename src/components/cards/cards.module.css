@@ -21,11 +21,14 @@
 }
 
 .content_text h2 {
+    display: flex;
     font-weight: normal;
     font-size: 23px;
     color: #2F327D;
     text-align: center;
-    
+    height: 80px;
+    justify-content: center;
+    align-items: center;
 }
 
 .content_text p {
