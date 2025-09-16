@@ -18,9 +18,9 @@ function Header() {
                         <nav>
                             <ul>
                                 <a href="http://">Home</a>
-                                <a href="http://">Careers</a>
-                                <a href="http://">Blog</a>
-                                <a href="http://">About Us</a>
+                                <a href="http://">Features</a>
+                                <a href="http://">Testimonial</a>
+                                <a href="http://">News</a>
 
                             </ul>
                         </nav>
