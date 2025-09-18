@@ -108,8 +108,7 @@ function Landing() {
                             CIimg={group_img}
                             CItitle={"FOR STUDENTS"}
                             BStext={"Enter access code"}
-                            BSbackgroundColor={"#23bfeed0"}
-                            BSborder={"1px solid #23bfeed0"}
+                            BSborder={"1px solid #fff"}
                             BStextColor={"#fff"}
                         />
 
@@ -127,7 +126,7 @@ function Landing() {
                     </div>
                 </div>
 
-                <div className="landing-features">
+                <div className="landing-features" id="features">
                     <div className="landing-features-content">
                         <span>Our <strong>Features</strong></span>
                         <p>This very extraordinary feature, can make learning activities more efficient</p>
@@ -242,7 +241,7 @@ function Landing() {
                 </div>
 
 
-                <div className="landing-testimonial">
+                <div className="landing-testimonial" id="testimonial">  
                     <div className="landing-testimonial-elements">
                         <div className="landing-testimonial-content">
                             <h3>────     TESTIMONIAL</h3>
@@ -264,7 +263,7 @@ function Landing() {
                     </div>
                 </div>
 
-                <div className="landing-news">
+                <div className="landing-news" id="news">
                     <div className="landing-news-content">
                         <span>Lastest News and Resources</span>
                         <p>See the developments that have occurred to Skillines in the world</p>
