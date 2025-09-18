@@ -14,7 +14,7 @@ No es un producto real, sino un proyecto de práctica personal para ponerme a pr
 ---
 
 ## 📸 Vista previa
-![Preview de Skilline](../online-learning-page/src/assets/profile.jpg)  
+![Preview de Skilline](../online-learning-page/src/assets/profile.png)  
 
 
 ---
