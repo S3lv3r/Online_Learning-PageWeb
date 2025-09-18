@@ -17,10 +17,10 @@ function Header() {
                     <div className="items-header-up">
                         <nav>
                             <ul>
-                                <a href="http://">Home</a>
-                                <a href="http://">Features</a>
-                                <a href="http://">Testimonial</a>
-                                <a href="http://">News</a>
+                                <a href="">Home</a>
+                                <a href="#features">Features</a>
+                                <a href="#testimonial">Testimonial</a>
+                                <a href="#news">News</a>
 
                             </ul>
                         </nav>
